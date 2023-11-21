@@ -1,5 +1,5 @@
 import React from 'react'
-import {Modal, Image} from 'react-bootstrap'
+import {Modal, Image, Button} from 'react-bootstrap'
 import useBebidas from '../hooks/useBebidas'
 
 export const ModalBebida = () => {
@@ -41,6 +41,16 @@ export const ModalBebida = () => {
                         {mostrarIngredientes()}
                     </div>
                 </Modal.Body>
+
+                <Modal.Footer>
+                    <Button 
+                        className='text-uppercase w-100' 
+                        variant='danger'
+                        onClick={handleModalClick}
+                    >
+                        Cerrar
+                    </Button>
+                </Modal.Footer>
             </Modal>
         )
     )
